@@ -1,0 +1,26 @@
+package com.chrismark.controller;
+
+import com.chrismark.entities.Customer;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ *
+ * @author chris
+ */
+@RestController
+public class HomeController {
+    
+    @GetMapping("/")
+    public String home(){
+    
+        return "Welcome to Spring Boot | Date: " + LocalDate.now();
+    
+    }
+    
+    
+    
+}
